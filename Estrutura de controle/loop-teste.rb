@@ -41,6 +41,6 @@ loop do
   end
 end
 
-# user.empty? — retorna true se o hash não tem pares chave/valor.
+# empty? — retorna true se o hash não tem pares chave/valor.
 # next — pula para a próxima iteração do loop (sem sair do método).
 # user.clear — remove todas as chaves/valores do hash (alternativa a user = {}).
