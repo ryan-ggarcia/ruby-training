@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cpf_cnpj (1.1.0)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  cpf_cnpj (>= 1.1)
+
+CHECKSUMS
+  bundler (4.0.15) sha256=a4ceb882fe94a0e0ac63cd0813932bbfd631a14e5ac0b7975189b19a4d28d9e7
+  cpf_cnpj (1.1.0) sha256=42fb902045b61819160555d5c7b47a951a39fc9d6a1c995909e3360d6ef7857b
+
+BUNDLED WITH
+  4.0.15
