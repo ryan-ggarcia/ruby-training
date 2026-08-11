@@ -1,0 +1,7 @@
+{
+  // Extensoes recomendadas para este projeto. O VS Code sugere instalar ao abrir a pasta.
+  "recommendations": [
+    // Autocomplete, ir-para-definicao, hover, formatacao e debug de Ruby
+    "shopify.ruby-lsp"
+  ]
+}

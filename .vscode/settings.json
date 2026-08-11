@@ -1,0 +1,42 @@
+{
+  "files.associations": { "*.erb": "erb" },
+  "emmet.includeLanguages": { "erb": "html" },
+  "emmet.triggerExpansionOnTab": true,
+
+  // O .rubocop.yml exige Layout/EndOfLine: lf, entao salvamos sempre com LF
+  "files.eol": "\n",
+
+  // ---- Ruby LSP ----
+  // "none": usa o Ruby instalado no PATH (sem rbenv/asdf/chruby no Windows)
+  "rubyLsp.rubyVersionManager": { "identifier": "none" },
+  "rubyLsp.formatter": "rubocop",
+  "rubyLsp.linters": ["rubocop"],
+  // ruby-lsp e debug estao no Gemfile, entao o servidor usa o bundle do projeto direto
+  // (nao precisa criar o bundle composto em .ruby-lsp/)
+
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true,
+    // sugestoes vem do Ruby LSP; desliga o "chute" por palavras do arquivo
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggest.showWords": false,
+    // abre a lista de sugestoes enquanto digita, inclusive dentro de strings
+    // (necessario para completar caminhos de require/require_relative)
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "on"
+    },
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "on",
+    "editor.semanticHighlighting.enabled": true,
+    // rubocop reclama de espaco no fim da linha e de arquivo sem linha final
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+  },
+
+  "[erb]": {
+    "editor.quickSuggestions": { "other": "on", "strings": "on" }
+  }
+}

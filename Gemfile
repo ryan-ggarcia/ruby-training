@@ -4,3 +4,11 @@ source "https://rubygems.org"
 # Logo abaixo colocamos a gem escolhida e digitamos bundler no terminal para baixar as gms
 
 gem 'cpf_cnpj', '>= 1.1'
+
+
+group :development do
+  gem "debug", require: false
+  gem "rake", require: false
+  gem "rubocop", require: false
+  gem "ruby-lsp", require: false
+end
