@@ -2,7 +2,7 @@
 
 loop do
   puts "--Calculadora--"
-  puts "**Digite 0 para incerrar"
+  puts "**Digite 0 para encerrar"
   print "Digite um numero: "
   n1 = gets.chomp.to_i
   print "Digite o segundo numero: "
