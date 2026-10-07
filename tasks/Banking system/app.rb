@@ -22,5 +22,7 @@ end
 
 person = NaturalPerson.new('Ryan','Human',1200,'483')
 bank = Bank.new
+person.readPerson
+puts("----------------------------------------\n")
 bank.deposit(1000,person)
 person.readPerson
