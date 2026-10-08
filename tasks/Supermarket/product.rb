@@ -1,6 +1,7 @@
 class Product
-  attr_accessor :name, :price, :quantity, :status, :category
-  def initialize(name,price,quantity,category,status)
+  attr_accessor :cod, :name, :price, :quantity, :status, :category
+  def initialize(cod,name,price,quantity,category,status)
+    @cod = cod
     @name = name
     @price = price
     @quantity = quantity
@@ -9,6 +10,6 @@ class Product
   end
 
   def to_s
-    "Name: #{name} | Price: #{price} | Category: #{category} | Quantity: #{quantity} | Status: #{status}"
+    "Cod: #{cod} | Name: #{name} | Price: #{price} | Category: #{category} | Quantity: #{quantity} | Status: #{status}"
   end
 end
