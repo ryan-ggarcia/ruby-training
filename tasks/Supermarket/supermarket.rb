@@ -13,7 +13,8 @@ class Supermarket
     puts("            =            MENU           =\n")
     puts("            = 1- Add new product        =\n")
     puts("            = 2- View all products      =\n")
-    puts("            = 3- Exit                   =\n")
+    puts("            = 3- Find by product cod    =\n")
+    puts("            = 4- Exit                   =\n")
     puts("            =============================\n")
     puts("\nChoose an option: ")
     option = gets.chomp
@@ -33,6 +34,10 @@ class Supermarket
       when 2
         inventory.read_products
       when 3
+        puts "Enter product cod:"
+        cod = gets.chomp.to_i
+        inventory.find_by(cod)
+      when 4
         break
       end
     end
